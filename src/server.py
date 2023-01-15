@@ -2,10 +2,10 @@
 バックエンドサーバー
 ブレインを動かしつつ，フロントエンドとソケット通信を行います．
 """
-import asyncio
+import asyncio # 並列処理を行うた目のパッケージ
 import json
-from typing import Dict, List, Optional, cast
-import argparse
+from typing import Dict, List, Optional, cast # 型アノテーション
+import argparse # コマンドラインの引数の処理
 
 import websockets
 from websockets.server import WebSocketServerProtocol
